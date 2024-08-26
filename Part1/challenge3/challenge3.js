@@ -1,42 +1,3 @@
-
-var markHeight1 = 1.69;
-var markWeight1 = 78;
-var johnHeight1 = 1.95;
-var johnWeight1 = 92;
-
-var markBMI1 =  markWeight1/(markHeight1 ** 2);
-var johnBMI1 = johnWeight1/(johnHeight1 ** 2);
-
-console.log("Data 1:")
-console.log("Mark's BMI = " + markBMI1);
-console.log("John's BMI = " + johnBMI1);
-if(markBMI1 > johnBMI1){
-    console.log("Mark's BMI is higher");
-}
-else{
-    console.log("John's BMI is higher");
-}
-
-var markHeight2 = 1.88;
-var markWeight2 = 95;
-var johnHeight2 = 1.76;
-var johnWeight2 = 85;
-
-var markBMI2 =  markWeight2/(markHeight2 ** 2);
-var johnBMI2 = johnWeight2/(johnHeight2 ** 2);
-
-console.log("Data 2:")
-console.log("Mark's BMI = " + markWeight2/(markHeight2 ** 2));
-console.log("John's BMI = " + johnWeight2/(johnHeight2 ** 2));
-
-if(markBMI2 > johnBMI2){
-    console.log("Mark's BMI is higher");
-}
-else{
-    console.log("John's BMI is higher");
-}
-
-
 // Challenge 3
 console.log("challenge 3: ")
 
@@ -63,6 +24,7 @@ else{
     console.log("Dolphin scores: " + dolphinAVGScore1 + " Koala scores: " +koalaAVGScore1+". The result is draw");
 }
 
+// Bonus1
 var dolphinBonusScore1 = 97;
 var dolphinBonusScore2 = 112;
 var dolphinBonusScore3 = 101;
@@ -94,4 +56,40 @@ else if (dolphinAVGBonusScore1 < koalaAVGBonusScore1){
 }
 else{
     console.log("Dolphin scores: " + dolphinAVGBonusScore1 + " Koala scores: " +koalaAVGBonusScore1+". The result is draw");
+}
+// Bonus 2
+var dolphinBonus2Score1 = 97;
+var dolphinBonus2Score2 = 112;
+var dolphinBonus2Score3 = 101;
+
+var dolphinAVGBonus2Score1 = (dolphinBonus2Score1 + dolphinBonus2Score2 + dolphinBonus2Score3)/3;
+
+
+var koalaBonus2Score1 = 109;
+var koalaBonus2Score2 = 95;
+var koalaBonus2Score3 = 106;
+
+var koalaAVGBonus2Score1 = (koalaBonus2Score1 + koalaBonus2Score2 + koalaBonus2Score3)/3;
+
+if (dolphinAVGBonus2Score1 > koalaAVGBonus2Score1 ){
+    if(dolphinAVGBonus2Score1 >= 100){
+        console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". The winner is Dolphin");
+    }
+    else{
+        console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". No one wins");
+    }
+}
+else if (dolphinAVGBonus2Score1 < koalaAVGBonus2Score1){
+    if(koalaAVGBonus2Score1 >= 100){
+     console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". The winner is Koala");
+    }
+    else{
+        console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". No one wins");
+    }
+}
+else if(dolphinAVGBonus2Score1 == koalaAVGBonus2Score1 && dolphinAVGBonus2Score1 >= 100 && koalaAVGBonus2Score1 >=100){
+    console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". The result is draw");
+}
+else{
+    console.log("Dolphin scores: " + dolphinAVGBonus2Score1 + " Koala scores: " +koalaAVGBonus2Score1+". No one wins");
 }
